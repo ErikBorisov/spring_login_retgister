@@ -45,7 +45,7 @@
         </thead>
         <tbody>
         <tr th:each="article: ${myArticles}">
-            <!--            <td style="display: none" th:text="${article.id}" />-->
+            <!--            <td style="display: none" th:text="${article.id}" />-->spring_demo
             <td th:text="${article.title}"/>
             <td th:text="${article.content}"/>
             <td th:text="${article.getAuthor().getName()}"/>
