@@ -2,10 +2,12 @@ package com.example.login_retgister.controller;
 
 
 import com.example.login_retgister.models.Article;
+import com.example.login_retgister.models.Comment;
 import com.example.login_retgister.models.User;
 import com.example.login_retgister.repositories.UserRepository;
 import com.example.login_retgister.security.CurrentUser;
 import com.example.login_retgister.serivce.ArticleService;
+import com.example.login_retgister.serivce.CommentService;
 import com.example.login_retgister.serivce.InterestService;
 import com.example.login_retgister.serivce.UserService;
 import lombok.RequiredArgsConstructor;
@@ -26,6 +28,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
+import java.util.Set;
 
 @Controller
 @RequiredArgsConstructor
@@ -36,6 +40,8 @@ public class UserController {
     private final UserRepository userRepository;
     private final InterestService interestService;
     private final ArticleService articleService;
+
+    private final CommentService commentService;
 
     @Value("${user.image.path}")
     private String userImagesFolder;
@@ -69,6 +75,11 @@ public class UserController {
             modelMap.addAttribute("article", new Article());
             modelMap.addAttribute("interests", interestService.allInterests());
             modelMap.addAttribute("myArticles", articleService.articlesByAuthor(currentUser.getUser()));
+            modelMap.addAttribute("comment", new Comment());
+            Set<Article> articles = currentUser.getUser().getArticles();
+            for (Article article : articles) {
+                modelMap.addAttribute("articleComment",commentService.commentsByArticle(article));
+            }
             return "user-page";
         } else {
             return "redirect:/login?errorMsg=Invalid credentials";

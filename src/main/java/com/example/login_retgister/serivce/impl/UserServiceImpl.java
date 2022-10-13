@@ -3,7 +3,7 @@ package com.example.login_retgister.serivce.impl;
 import com.example.login_retgister.models.User;
 import com.example.login_retgister.repositories.UserRepository;
 import com.example.login_retgister.serivce.UserService;
-import com.example.login_retgister.serivce.mail.EmailSender;
+//import com.example.login_retgister.serivce.mail.EmailSender;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
-    private final EmailSender emailSender;
+//    private final EmailSender emailSender;
 
     @Value("${user.image.path}")
     private String userImagesFolder;
@@ -45,8 +45,8 @@ public class UserServiceImpl implements UserService {
             user.setImage(avatarName);
             user.setActivationToken(activationToken);
             userRepository.save(user);
-            String mailBody = "To verify your registration please click on link or ignore it " +
-                    "http://localhost:8090/user/activate?token=" + activationToken + "&email=" + user.getEmail();
+//            String mailBody = "To verify your registration please click on link or ignore it " +
+//                    "http://localhost:8090/user/activate?token=" + activationToken + "&email=" + user.getEmail();
 //            emailSender.sendSimpleMessage(user.getEmail(), "Account activation", mailBody);
             return "Please check your email";
         }

@@ -31,7 +31,7 @@ public class Article {
     @Column
     private String content;
 
-    @ManyToOne( fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="author_id", nullable=false)
     private User author;
 
@@ -40,7 +40,7 @@ public class Article {
     @JoinColumn(name="interest_id", nullable=false)
     private Interest interest;
 
-    @OneToMany(mappedBy = "article")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "article", fetch = FetchType.EAGER)
     private Set<Comment> comments;
 
     @Column

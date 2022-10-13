@@ -29,4 +29,5 @@ public class ArticleServiceImpl implements ArticleService {
     public List<Article> articlesByAuthor(final User user) {
         return articleRepository.findAllByAuthor(user);
     }
+
 }
