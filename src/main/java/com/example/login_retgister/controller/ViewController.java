@@ -42,6 +42,11 @@ public class ViewController {
         return "verifyError";
     }
 
+    @GetMapping("/loginError")
+    public String loginError() {
+        return "loginError";
+    }
+
     @PostMapping("/logout")
     public String logout(){
         return "index";

@@ -22,7 +22,7 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
             response.sendRedirect("/login?loginError=bad-credentials&email=" + request.getParameter("email") + "&password=" + request.getParameter("password"));
         }
         if (exception.getClass().isAssignableFrom(LockedException.class)) { //todo for students
-
+            response.sendRedirect("loginError");
         }
     }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>User-Page</title>
+    <link rel="shortcut icon" type="x-icon" href="icon.png"/>
     <style>
         table, th, td {
             border: 1px solid black;
@@ -18,12 +19,12 @@
     <button>Logout</button>
 </form>
 
-<div sec:authorize="hasRole('ROLE_ADMIN')">
-    <h3>You will see this only if you are ADMIN</h3>
-    <p>
-        <a th:href="@{/admin/home}">Admin Home</a>
-    </p>
-</div>
+<!--<div sec:authorize="hasRole('ROLE_ADMIN')">-->
+<!--    <h3>You will see this only if you are ADMIN</h3>-->
+<!--    <p>-->
+<!--        <a th:href="@{/admin/home}">Admin Home</a>-->
+<!--    </p>-->
+<!--</div>-->
 
 <div class="add-article"></div>
 <p>Add article:</p>

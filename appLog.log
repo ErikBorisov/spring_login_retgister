@@ -265,3 +265,527 @@
 2022-10-17 11:37:36.847  INFO 18276 --- [RMI TCP Connection(1)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-10-17 11:37:36.847  INFO 18276 --- [RMI TCP Connection(1)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-10-17 11:37:36.849  INFO 18276 --- [RMI TCP Connection(1)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 11:49:31.112  INFO 18276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 11:49:31.130  INFO 18276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 11:49:31.164  INFO 18276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 11:49:36.567  INFO 20924 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 20924 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 11:49:36.568  INFO 20924 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 11:49:36.614  INFO 20924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 11:49:36.614  INFO 20924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 11:49:37.422  INFO 20924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 11:49:37.483  INFO 20924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2022-10-17 11:49:38.023  INFO 20924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 11:49:38.031  INFO 20924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 11:49:38.032  INFO 20924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 11:49:38.093  INFO 20924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 11:49:38.093  INFO 20924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1478 ms
+2022-10-17 11:49:38.275  WARN 20924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [8F2E29546E3676CC86A2F2D4FB812B10]
+2022-10-17 11:49:38.350  INFO 20924 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 11:49:38.350  INFO 20924 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 11:49:38.350  INFO 20924 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 11:49:38.357  INFO 20924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 11:49:38.693  INFO 20924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 11:49:38.719  INFO 20924 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 11:49:38.780  INFO 20924 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.021s)
+2022-10-17 11:49:38.791  INFO 20924 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 11:49:38.792  INFO 20924 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 11:49:38.921  INFO 20924 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 11:49:38.977  INFO 20924 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 11:49:39.123  INFO 20924 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 11:49:39.227  INFO 20924 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 11:49:39.797  INFO 20924 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 11:49:39.804  INFO 20924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 11:49:40.192  WARN 20924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 11:49:40.580  INFO 20924 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ebb1ceb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c583ab2, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b8ff69d, org.springframework.security.web.header.HeaderWriterFilter@68c7c683, org.springframework.security.web.authentication.logout.LogoutFilter@24c199f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c8d5459, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32a05ab3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7100b65d, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6fcb3f36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@258c9aee, org.springframework.security.web.session.SessionManagementFilter@28932680, org.springframework.security.web.access.ExceptionTranslationFilter@335d6a7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47ec6e5d]
+2022-10-17 11:49:40.898  INFO 20924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 11:49:40.902  INFO 20924 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 11:49:40.960  INFO 20924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 11:49:40.975  INFO 20924 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.73 seconds (JVM running for 5.47)
+2022-10-17 11:49:41.197  INFO 20924 --- [RMI TCP Connection(2)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 11:49:41.197  INFO 20924 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 11:49:41.198  INFO 20924 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 11:50:32.927  WARN 20924 --- [http-nio-8090-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 11:50:32.927  WARN 20924 --- [http-nio-8090-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 11:50:33.252  WARN 20924 --- [http-nio-8090-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /images/logo-light.jpg
+2022-10-17 11:51:01.859  INFO 20924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 11:51:01.863  INFO 20924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 11:51:01.870  INFO 20924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 11:51:04.395  INFO 25376 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 25376 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 11:51:04.396  INFO 25376 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 11:51:04.445  INFO 25376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 11:51:04.445  INFO 25376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 11:51:05.248  INFO 25376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 11:51:05.303  INFO 25376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2022-10-17 11:51:05.899  INFO 25376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 11:51:05.908  INFO 25376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 11:51:05.909  INFO 25376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 11:51:05.969  INFO 25376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 11:51:05.970  INFO 25376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1524 ms
+2022-10-17 11:51:06.194  INFO 25376 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 11:51:06.194  INFO 25376 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 11:51:06.194  INFO 25376 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 11:51:06.201  INFO 25376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 11:51:06.540  INFO 25376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 11:51:06.565  INFO 25376 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 11:51:06.609  INFO 25376 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.019s)
+2022-10-17 11:51:06.619  INFO 25376 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 11:51:06.620  INFO 25376 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 11:51:06.734  INFO 25376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 11:51:06.808  INFO 25376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 11:51:06.953  INFO 25376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 11:51:07.062  INFO 25376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 11:51:07.587  INFO 25376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 11:51:07.597  INFO 25376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 11:51:07.996  WARN 25376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 11:51:08.349  INFO 25376 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53a38994, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ce447a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c73d7ca, org.springframework.security.web.header.HeaderWriterFilter@1a0e9709, org.springframework.security.web.authentication.logout.LogoutFilter@1ce3a068, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e7f71db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ea372ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f704a9a, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@501e76a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@245deeb4, org.springframework.security.web.session.SessionManagementFilter@346654ea, org.springframework.security.web.access.ExceptionTranslationFilter@4652501e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@662b16bb]
+2022-10-17 11:51:08.683  INFO 25376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 11:51:08.689  INFO 25376 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 11:51:08.772  INFO 25376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 11:51:08.792  INFO 25376 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.713 seconds (JVM running for 5.297)
+2022-10-17 11:51:09.373  INFO 25376 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 11:51:09.373  INFO 25376 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 11:51:09.374  INFO 25376 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 11:51:18.418  WARN 25376 --- [http-nio-8090-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 11:51:18.418  WARN 25376 --- [http-nio-8090-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 11:51:53.962  INFO 25376 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 11:51:53.966  INFO 25376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 11:51:53.974  INFO 25376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 11:51:56.448  INFO 24716 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 24716 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 11:51:56.449  INFO 24716 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 11:51:56.486  INFO 24716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 11:51:56.486  INFO 24716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 11:51:57.194  INFO 24716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 11:51:57.257  INFO 24716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2022-10-17 11:51:57.725  INFO 24716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 11:51:57.732  INFO 24716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 11:51:57.732  INFO 24716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 11:51:57.791  INFO 24716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 11:51:57.791  INFO 24716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2022-10-17 11:51:57.992  INFO 24716 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 11:51:57.992  INFO 24716 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 11:51:57.992  INFO 24716 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 11:51:57.999  INFO 24716 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 11:51:58.214  INFO 24716 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 11:51:58.240  INFO 24716 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 11:51:58.276  INFO 24716 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2022-10-17 11:51:58.286  INFO 24716 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 11:51:58.287  INFO 24716 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 11:51:58.389  INFO 24716 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 11:51:58.442  INFO 24716 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 11:51:58.569  INFO 24716 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 11:51:58.654  INFO 24716 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 11:51:59.109  INFO 24716 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 11:51:59.115  INFO 24716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 11:51:59.487  WARN 24716 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 11:51:59.843  INFO 24716 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41b1a537, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7569637d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3bad327a, org.springframework.security.web.header.HeaderWriterFilter@e43e51b, org.springframework.security.web.authentication.logout.LogoutFilter@3b8ff69d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24f1bf8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@336b168, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38954d3b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4a79ab3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e0e7951, org.springframework.security.web.session.SessionManagementFilter@27064166, org.springframework.security.web.access.ExceptionTranslationFilter@4a0f25bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6115345]
+2022-10-17 11:52:00.154  INFO 24716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 11:52:00.158  INFO 24716 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 11:52:00.210  INFO 24716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 11:52:00.224  INFO 24716 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.085 seconds (JVM running for 4.693)
+2022-10-17 11:52:00.435  INFO 24716 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 11:52:00.435  INFO 24716 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 11:52:00.436  INFO 24716 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 11:52:04.669  WARN 24716 --- [http-nio-8090-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 11:52:04.670  WARN 24716 --- [http-nio-8090-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 11:52:25.355  WARN 24716 --- [http-nio-8090-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 11:52:25.355  WARN 24716 --- [http-nio-8090-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 12:12:15.009  WARN 24716 --- [http-nio-8090-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 12:12:15.009  WARN 24716 --- [http-nio-8090-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 12:12:42.918  INFO 24716 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:12:43.006  INFO 24716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:12:43.147  INFO 24716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:12:47.073  INFO 27992 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 27992 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:12:47.074  INFO 27992 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:12:47.114  INFO 27992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:12:47.114  INFO 27992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:12:48.080  INFO 27992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:12:48.146  INFO 27992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:12:48.861  INFO 27992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:12:48.869  INFO 27992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:12:48.869  INFO 27992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:12:48.928  INFO 27992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:12:48.928  INFO 27992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1814 ms
+2022-10-17 12:12:49.162  INFO 27992 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:12:49.162  INFO 27992 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:12:49.162  INFO 27992 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:12:49.170  INFO 27992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:12:49.537  INFO 27992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:12:49.564  INFO 27992 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:12:49.634  INFO 27992 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.026s)
+2022-10-17 12:12:49.645  INFO 27992 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:12:49.645  INFO 27992 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:12:49.771  INFO 27992 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:12:49.827  INFO 27992 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:12:49.979  INFO 27992 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:12:50.090  INFO 27992 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:12:50.663  INFO 27992 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:12:50.673  INFO 27992 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:12:51.131  WARN 27992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:12:51.520  INFO 27992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41aeb6f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f19706e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f55eee4, org.springframework.security.web.header.HeaderWriterFilter@f704a9a, org.springframework.security.web.authentication.logout.LogoutFilter@1e869105, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b9a7971, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@769f55ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20d29374, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@53a38994, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@647a0377, org.springframework.security.web.session.SessionManagementFilter@4927a493, org.springframework.security.web.access.ExceptionTranslationFilter@6f5093c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ebe3cd4]
+2022-10-17 12:12:51.868  INFO 27992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:12:51.873  INFO 27992 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:12:51.932  INFO 27992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:12:51.946  INFO 27992 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 5.258 seconds (JVM running for 6.148)
+2022-10-17 12:12:52.190  INFO 27992 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:12:52.190  INFO 27992 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:12:52.192  INFO 27992 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-17 12:12:52.732  WARN 27992 --- [http-nio-8090-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 12:12:52.733  WARN 27992 --- [http-nio-8090-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 12:12:55.560  WARN 27992 --- [http-nio-8090-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 12:12:55.560  WARN 27992 --- [http-nio-8090-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 12:17:25.116  WARN 27992 --- [http-nio-8090-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2022-10-17 12:17:25.116  WARN 27992 --- [http-nio-8090-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /css/plugins/plugins.css
+2022-10-17 12:24:50.837  INFO 27992 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:24:50.884  INFO 27992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:24:50.954  INFO 27992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:24:54.418  INFO 16724 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 16724 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:24:54.419  INFO 16724 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:24:54.472  INFO 16724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:24:54.473  INFO 16724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:24:55.214  INFO 16724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:24:55.275  INFO 16724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:24:55.805  INFO 16724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:24:55.814  INFO 16724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:24:55.814  INFO 16724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:24:55.877  INFO 16724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:24:55.877  INFO 16724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1404 ms
+2022-10-17 12:24:56.069  WARN 16724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [BB6CDC5B67C957056789116AA600DE62]
+2022-10-17 12:24:56.151  INFO 16724 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:24:56.151  INFO 16724 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:24:56.152  INFO 16724 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:24:56.159  INFO 16724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:24:56.539  INFO 16724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:24:56.572  INFO 16724 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:24:56.696  INFO 16724 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.038s)
+2022-10-17 12:24:56.708  INFO 16724 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:24:56.709  INFO 16724 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:24:56.820  INFO 16724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:24:56.875  INFO 16724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:24:57.019  INFO 16724 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:24:57.126  INFO 16724 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:24:57.611  INFO 16724 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:24:57.618  INFO 16724 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:24:57.998  WARN 16724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:24:58.362  INFO 16724 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d5890bf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@583faa55, org.springframework.security.web.context.SecurityContextPersistenceFilter@68c7c683, org.springframework.security.web.header.HeaderWriterFilter@4861163f, org.springframework.security.web.authentication.logout.LogoutFilter@596902d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@316a247f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28932680, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32a05ab3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@667db0a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ebb1ceb, org.springframework.security.web.session.SessionManagementFilter@29f63d8e, org.springframework.security.web.access.ExceptionTranslationFilter@4722a157, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a6b624b]
+2022-10-17 12:24:58.674  INFO 16724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:24:58.679  INFO 16724 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:24:58.729  INFO 16724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:24:58.745  INFO 16724 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.665 seconds (JVM running for 5.445)
+2022-10-17 12:24:59.061  INFO 16724 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:24:59.061  INFO 16724 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:24:59.062  INFO 16724 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 12:25:14.730  WARN 16724 --- [http-nio-8090-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /user/Sign-check-icon.png
+2022-10-17 12:28:55.438  INFO 16724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:28:55.443  INFO 16724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:28:55.460  INFO 16724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:28:58.496  INFO 27520 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 27520 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:28:58.497  INFO 27520 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:28:58.539  INFO 27520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:28:58.539  INFO 27520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:28:59.321  INFO 27520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:28:59.392  INFO 27520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:28:59.914  INFO 27520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:28:59.923  INFO 27520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:28:59.923  INFO 27520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:28:59.987  INFO 27520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:28:59.987  INFO 27520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1447 ms
+2022-10-17 12:29:00.162  WARN 27520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [C01D12DEE30737641FEA4FEFF43B512B]
+2022-10-17 12:29:00.230  INFO 27520 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:29:00.230  INFO 27520 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:29:00.230  INFO 27520 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:29:00.237  INFO 27520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:29:00.554  INFO 27520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:29:00.582  INFO 27520 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:29:00.640  INFO 27520 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.020s)
+2022-10-17 12:29:00.651  INFO 27520 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:29:00.651  INFO 27520 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:29:00.757  INFO 27520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:29:00.822  INFO 27520 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:29:00.976  INFO 27520 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:29:01.087  INFO 27520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:29:01.600  INFO 27520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:29:01.606  INFO 27520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:29:01.967  WARN 27520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:29:02.318  INFO 27520 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51bdb3cc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68c0f7ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@61201a8a, org.springframework.security.web.header.HeaderWriterFilter@31e7b119, org.springframework.security.web.authentication.logout.LogoutFilter@3dff880a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44e108, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14b65a67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a2180e2, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5bced872, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2959cee6, org.springframework.security.web.session.SessionManagementFilter@40782539, org.springframework.security.web.access.ExceptionTranslationFilter@32a05ab3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@258c9aee]
+2022-10-17 12:29:02.608  INFO 27520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:29:02.612  INFO 27520 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:29:02.659  INFO 27520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:29:02.672  INFO 27520 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.484 seconds (JVM running for 5.362)
+2022-10-17 12:29:03.058  INFO 27520 --- [RMI TCP Connection(2)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:29:03.059  INFO 27520 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:29:03.059  INFO 27520 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-17 12:29:11.669  WARN 27520 --- [http-nio-8090-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /user/icon.png
+2022-10-17 12:30:10.895  INFO 27520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:30:10.902  INFO 27520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:30:10.910  INFO 27520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:30:13.232  INFO 2060 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 2060 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:30:13.233  INFO 2060 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:30:13.276  INFO 2060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:30:13.277  INFO 2060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:30:13.947  INFO 2060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:30:13.995  INFO 2060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:30:14.510  INFO 2060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:30:14.520  INFO 2060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:30:14.521  INFO 2060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:30:14.582  INFO 2060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:30:14.582  INFO 2060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2022-10-17 12:30:14.732  WARN 2060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [0303D0A849C7E905E4642A95FF620FD6]
+2022-10-17 12:30:14.801  INFO 2060 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:30:14.801  INFO 2060 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:30:14.801  INFO 2060 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:30:14.807  INFO 2060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:30:15.027  INFO 2060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:30:15.050  INFO 2060 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:30:15.084  INFO 2060 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2022-10-17 12:30:15.092  INFO 2060 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:30:15.093  INFO 2060 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:30:15.183  INFO 2060 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:30:15.225  INFO 2060 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:30:15.361  INFO 2060 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:30:15.445  INFO 2060 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:30:15.890  INFO 2060 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:30:15.896  INFO 2060 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:30:16.237  WARN 2060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:30:16.575  INFO 2060 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4417de30, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d3ce0b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@1873f29e, org.springframework.security.web.header.HeaderWriterFilter@114a3f7b, org.springframework.security.web.authentication.logout.LogoutFilter@667db0a8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@785c9c50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6115345, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fda90d9, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@58e4a2fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dd55376, org.springframework.security.web.session.SessionManagementFilter@77a034a4, org.springframework.security.web.access.ExceptionTranslationFilter@2b164cc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e63b612]
+2022-10-17 12:30:16.864  INFO 2060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:30:16.869  INFO 2060 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:30:16.915  INFO 2060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:30:16.930  INFO 2060 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 3.973 seconds (JVM running for 4.457)
+2022-10-17 12:30:17.157  INFO 2060 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:30:17.157  INFO 2060 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:30:17.158  INFO 2060 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 12:36:24.645  INFO 2060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:36:24.659  INFO 2060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:36:24.692  INFO 2060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:36:27.429  INFO 26756 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 26756 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:36:27.430  INFO 26756 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:36:27.474  INFO 26756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:36:27.474  INFO 26756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:36:28.213  INFO 26756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:36:28.270  INFO 26756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:36:28.781  INFO 26756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:36:28.792  INFO 26756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:36:28.793  INFO 26756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:36:28.855  INFO 26756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:36:28.856  INFO 26756 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
+2022-10-17 12:36:29.028  WARN 26756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [CA64DB35D6BC50ED2917C4EBA2E9FF73]
+2022-10-17 12:36:29.101  INFO 26756 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:36:29.101  INFO 26756 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:36:29.101  INFO 26756 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:36:29.108  INFO 26756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:36:29.469  INFO 26756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:36:29.498  INFO 26756 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:36:29.609  INFO 26756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.030s)
+2022-10-17 12:36:29.621  INFO 26756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:36:29.622  INFO 26756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:36:29.744  INFO 26756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:36:29.792  INFO 26756 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:36:29.937  INFO 26756 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:36:30.045  INFO 26756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:36:30.524  INFO 26756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:36:30.537  INFO 26756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:36:30.915  WARN 26756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:36:31.276  INFO 26756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@748e8ffe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@367469d, org.springframework.security.web.context.SecurityContextPersistenceFilter@107d489c, org.springframework.security.web.header.HeaderWriterFilter@221b93c6, org.springframework.security.web.authentication.logout.LogoutFilter@23114e8d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64350431, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1536cbc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dff880a, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@555ad27b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cd02eb5, org.springframework.security.web.session.SessionManagementFilter@598e99cf, org.springframework.security.web.access.ExceptionTranslationFilter@596902d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a4482f1]
+2022-10-17 12:36:31.566  INFO 26756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:36:31.575  INFO 26756 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:36:31.625  INFO 26756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:36:31.640  INFO 26756 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.515 seconds (JVM running for 5.207)
+2022-10-17 12:36:32.138  INFO 26756 --- [RMI TCP Connection(2)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:36:32.138  INFO 26756 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:36:32.139  INFO 26756 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 12:39:48.397  INFO 26756 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:39:48.401  INFO 26756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:39:48.408  INFO 26756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:39:50.973  INFO 21840 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 21840 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:39:50.974  INFO 21840 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:39:51.012  INFO 21840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:39:51.012  INFO 21840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:39:51.696  INFO 21840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:39:51.744  INFO 21840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:39:52.209  INFO 21840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:39:52.217  INFO 21840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:39:52.218  INFO 21840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:39:52.273  INFO 21840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:39:52.274  INFO 21840 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1262 ms
+2022-10-17 12:39:52.439  WARN 21840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [EC789C6B7E31EFEB6E4D397C8F78C3D6]
+2022-10-17 12:39:52.509  INFO 21840 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:39:52.510  INFO 21840 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:39:52.510  INFO 21840 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:39:52.516  INFO 21840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:39:52.798  INFO 21840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:39:52.820  INFO 21840 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:39:52.855  INFO 21840 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2022-10-17 12:39:52.864  INFO 21840 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:39:52.864  INFO 21840 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:39:52.959  INFO 21840 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:39:53.026  INFO 21840 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:39:53.166  INFO 21840 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:39:53.258  INFO 21840 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:39:53.725  INFO 21840 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:39:53.731  INFO 21840 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:39:54.074  WARN 21840 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:39:54.431  INFO 21840 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61b1a6ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3edf14ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f929286, org.springframework.security.web.header.HeaderWriterFilter@1a5bc88e, org.springframework.security.web.authentication.logout.LogoutFilter@3e9c049f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7cd02eb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6165870b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e4915f3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@29a30719, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d5c0ddb, org.springframework.security.web.session.SessionManagementFilter@5a6f885c, org.springframework.security.web.access.ExceptionTranslationFilter@3d90ebbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@367469d]
+2022-10-17 12:39:54.721  INFO 21840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:39:54.725  INFO 21840 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:39:54.770  INFO 21840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:39:54.783  INFO 21840 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.089 seconds (JVM running for 4.643)
+2022-10-17 12:39:55.335  INFO 21840 --- [RMI TCP Connection(2)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:39:55.335  INFO 21840 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:39:55.337  INFO 21840 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-17 12:40:52.266  INFO 21840 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:40:52.269  INFO 21840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:40:52.276  INFO 21840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:40:54.651  INFO 23172 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 23172 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:40:54.652  INFO 23172 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:40:54.691  INFO 23172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:40:54.691  INFO 23172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:40:55.350  INFO 23172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:40:55.403  INFO 23172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:40:55.863  INFO 23172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:40:55.870  INFO 23172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:40:55.871  INFO 23172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:40:55.926  INFO 23172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:40:55.927  INFO 23172 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1236 ms
+2022-10-17 12:40:56.076  WARN 23172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [F24EE155BBE40ECE31A08646F98E87F5]
+2022-10-17 12:40:56.151  INFO 23172 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:40:56.151  INFO 23172 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:40:56.151  INFO 23172 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:40:56.158  INFO 23172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:40:56.385  INFO 23172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:40:56.409  INFO 23172 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:40:56.443  INFO 23172 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.016s)
+2022-10-17 12:40:56.452  INFO 23172 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:40:56.453  INFO 23172 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:40:56.551  INFO 23172 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:40:56.591  INFO 23172 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:40:56.723  INFO 23172 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:40:56.807  INFO 23172 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:40:57.244  INFO 23172 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:40:57.250  INFO 23172 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:40:57.608  WARN 23172 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:40:57.924  INFO 23172 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@174ba9e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11590fb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@19853c51, org.springframework.security.web.header.HeaderWriterFilter@245deeb4, org.springframework.security.web.authentication.logout.LogoutFilter@6077ec49, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@bd27ce2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49d6bf48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b441bf5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@77f98afe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@739d2d4c, org.springframework.security.web.session.SessionManagementFilter@41aeb6f4, org.springframework.security.web.access.ExceptionTranslationFilter@53a38994, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20e5b587]
+2022-10-17 12:40:58.206  INFO 23172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:40:58.211  INFO 23172 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:40:58.260  INFO 23172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:40:58.273  INFO 23172 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 3.896 seconds (JVM running for 4.4)
+2022-10-17 12:40:58.568  INFO 23172 --- [RMI TCP Connection(2)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:40:58.568  INFO 23172 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:40:58.569  INFO 23172 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 12:41:08.628  WARN 23172 --- [http-nio-8090-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /user/icons8-java-48.png
+2022-10-17 12:41:32.917  INFO 23172 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:41:32.920  INFO 23172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:41:32.926  INFO 23172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:41:35.238  INFO 12132 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 12132 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:41:35.240  INFO 12132 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:41:35.280  INFO 12132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:41:35.280  INFO 12132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:41:35.954  INFO 12132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:41:36.002  INFO 12132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:41:36.446  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:41:36.453  INFO 12132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:41:36.453  INFO 12132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:41:36.508  INFO 12132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:41:36.508  INFO 12132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1228 ms
+2022-10-17 12:41:36.657  WARN 12132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [13601D7E6297A3E338D9B0B2DCD39B7C]
+2022-10-17 12:41:36.728  INFO 12132 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:41:36.728  INFO 12132 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:41:36.729  INFO 12132 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:41:36.735  INFO 12132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:41:36.959  INFO 12132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:41:36.982  INFO 12132 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:41:37.018  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.016s)
+2022-10-17 12:41:37.026  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:41:37.027  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:41:37.129  INFO 12132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:41:37.174  INFO 12132 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:41:37.302  INFO 12132 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:41:37.384  INFO 12132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:41:37.814  INFO 12132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:41:37.820  INFO 12132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:41:38.158  WARN 12132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:41:38.473  INFO 12132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45536455, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58e4a2fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f929286, org.springframework.security.web.header.HeaderWriterFilter@1a5bc88e, org.springframework.security.web.authentication.logout.LogoutFilter@7633efdc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61b1a6ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77a034a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6115345, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5d5c0ddb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b944cd3, org.springframework.security.web.session.SessionManagementFilter@5a6f885c, org.springframework.security.web.access.ExceptionTranslationFilter@3d90ebbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@501bf838]
+2022-10-17 12:41:38.762  INFO 12132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:41:38.766  INFO 12132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:41:38.811  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:41:38.825  INFO 12132 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 3.855 seconds (JVM running for 4.348)
+2022-10-17 12:41:39.162  INFO 12132 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:41:39.162  INFO 12132 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:41:39.164  INFO 12132 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 12:42:02.492  INFO 12132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:42:02.496  INFO 12132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:42:02.503  INFO 12132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:42:04.753  INFO 14832 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 14832 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:42:04.754  INFO 14832 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:42:04.790  INFO 14832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:42:04.790  INFO 14832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:42:05.464  INFO 14832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:42:05.519  INFO 14832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:42:05.973  INFO 14832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:42:05.980  INFO 14832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:42:05.980  INFO 14832 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:42:06.035  INFO 14832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:42:06.035  INFO 14832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1245 ms
+2022-10-17 12:42:06.184  WARN 14832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [1A596CE292543C19EABFB46F58927C91]
+2022-10-17 12:42:06.252  INFO 14832 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:42:06.252  INFO 14832 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:42:06.252  INFO 14832 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:42:06.259  INFO 14832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:42:06.488  INFO 14832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:42:06.511  INFO 14832 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:42:06.546  INFO 14832 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2022-10-17 12:42:06.554  INFO 14832 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:42:06.555  INFO 14832 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:42:06.649  INFO 14832 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:42:06.700  INFO 14832 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:42:06.832  INFO 14832 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:42:06.917  INFO 14832 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:42:07.369  INFO 14832 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:42:07.374  INFO 14832 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:42:07.731  WARN 14832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:42:08.058  INFO 14832 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64350431, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d71a153, org.springframework.security.web.context.SecurityContextPersistenceFilter@24bb3123, org.springframework.security.web.header.HeaderWriterFilter@70967648, org.springframework.security.web.authentication.logout.LogoutFilter@7e42c762, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6832b25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48605da7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d90ebbd, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@e5a1ea6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@555ad27b, org.springframework.security.web.session.SessionManagementFilter@a2180e2, org.springframework.security.web.access.ExceptionTranslationFilter@74c51dba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a9ccc69]
+2022-10-17 12:42:08.348  INFO 14832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:42:08.352  INFO 14832 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:42:08.399  INFO 14832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:42:08.413  INFO 14832 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 3.93 seconds (JVM running for 4.439)
+2022-10-17 12:42:08.647  INFO 14832 --- [RMI TCP Connection(3)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:42:08.647  INFO 14832 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:42:08.648  INFO 14832 --- [RMI TCP Connection(3)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-17 12:58:37.142  INFO 14832 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:58:37.154  INFO 14832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 12:58:37.172  INFO 14832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 12:58:39.919  INFO 8952 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Starting LoginRetgisterApplication using Java 17.0.2 on DESKTOP-QB5QB4L with PID 8952 (C:\Users\Admin\IdeaProjects\login_retgister\target\classes started by Admin in C:\Users\Admin\IdeaProjects\login_retgister)
+2022-10-17 12:58:39.921  INFO 8952 --- [restartedMain] c.e.l.LoginRetgisterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-17 12:58:39.961  INFO 8952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-17 12:58:39.961  INFO 8952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-17 12:58:40.676  INFO 8952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 12:58:40.726  INFO 8952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2022-10-17 12:58:41.215  INFO 8952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-10-17 12:58:41.223  INFO 8952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 12:58:41.223  INFO 8952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 12:58:41.280  INFO 8952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 12:58:41.280  INFO 8952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1318 ms
+2022-10-17 12:58:41.434  WARN 8952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [9CE8815A4BC647F183FFBF8223045723]
+2022-10-17 12:58:41.505  INFO 8952 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-17 12:58:41.505  INFO 8952 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-17 12:58:41.505  INFO 8952 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-17 12:58:41.512  INFO 8952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 12:58:41.799  INFO 8952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 12:58:41.822  INFO 8952 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/spring_demo (MySQL 8.0)
+2022-10-17 12:58:41.875  INFO 8952 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.019s)
+2022-10-17 12:58:41.885  INFO 8952 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `spring_demo`: 0.0.2
+2022-10-17 12:58:41.885  INFO 8952 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `spring_demo` is up to date. No migration necessary.
+2022-10-17 12:58:42.005  INFO 8952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 12:58:42.072  INFO 8952 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-17 12:58:42.207  INFO 8952 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-17 12:58:42.304  INFO 8952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-17 12:58:42.786  INFO 8952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 12:58:42.792  INFO 8952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 12:58:43.166  WARN 8952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 12:58:43.513  INFO 8952 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74f10f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77c45277, org.springframework.security.web.context.SecurityContextPersistenceFilter@24c199f4, org.springframework.security.web.header.HeaderWriterFilter@74c51dba, org.springframework.security.web.authentication.logout.LogoutFilter@6115345, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4dbcb7f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@107d489c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a6f885c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@64350431, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@748e8ffe, org.springframework.security.web.session.SessionManagementFilter@70967648, org.springframework.security.web.access.ExceptionTranslationFilter@60f0aa7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52f96480]
+2022-10-17 12:58:43.808  INFO 8952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-17 12:58:43.814  INFO 8952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-17 12:58:43.874  INFO 8952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-10-17 12:58:43.888  INFO 8952 --- [restartedMain] c.e.l.LoginRetgisterApplication          : Started LoginRetgisterApplication in 4.272 seconds (JVM running for 4.97)
+2022-10-17 12:58:44.125  INFO 8952 --- [RMI TCP Connection(2)-192.168.1.16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 12:58:44.126  INFO 8952 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 12:58:44.127  INFO 8952 --- [RMI TCP Connection(2)-192.168.1.16] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
