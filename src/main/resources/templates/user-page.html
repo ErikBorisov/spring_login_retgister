@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>User-Page</title>
@@ -14,10 +14,16 @@
 <p id="m" class="fa fa-user-circle-o" th:text=" ${currentUser.name}"></p>
 <p id="current_user_surname" class="fa fa-user-circle-o" th:text=" ${currentUser.surname}"></p>
 <img th:src="@{${'/user/image/' + currentUser.image}}" width="200" , height="300">
-<form th:action="@{/user/logout}" method="post">
+<form th:action="@{/logout}" method="post">
     <button>Logout</button>
 </form>
 
+<div sec:authorize="hasRole('ROLE_ADMIN')">
+    <h3>You will see this only if you are ADMIN</h3>
+    <p>
+        <a th:href="@{/admin/home}">Admin Home</a>
+    </p>
+</div>
 
 <div class="add-article"></div>
 <p>Add article:</p>
@@ -45,11 +51,10 @@
         </thead>
         <tbody>
         <tr th:each="article: ${myArticles}">
-            <!--            <td style="display: none" th:text="${article.id}" />-->spring_demo
+            <!--            <td style="display: none" th:text="${article.id}" />-->
             <td th:text="${article.title}"/>
             <td th:text="${article.content}"/>
             <td th:text="${article.getAuthor().getName()}"/>
-            <!--            <td th:each="comment: ${article.getComments()}" th:text="${comment.content}">-->
             <td>
                 <div th:if="${article.getComments().size()!=0}">
                     <table>
@@ -69,10 +74,63 @@
             <td>
                 <div class="add-comment"></div>
                 <p>Add comment:</p>
-                <form th:action="@{/comment}" th:object="${comment}" method="post">
-                    <input style="visibility: hidden" th:value="article">
-                    <input placeholder="content" type="text" th:field="*{content}">
-                    <button type="submit">Add comment</button>
+                <form th:object="${comment}" method="post" th:action="@{/comment}">
+                    <textarea placeholder="Content" th:field="*{content}"/>
+                    <input type="hidden" th:name="articleId" th:value="${article.id}">
+                    <button>Add comment</button>
+                </form>
+            </td>
+            <td>
+                <form th:object="${article}" method="post" th:action="@{/delete}">
+                    <input type="hidden" th:name="articleId" th:value="${article.id}">
+                    <button>Delete article</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div th:if="${allArticles.size()!=0}">
+    <p>All articles:</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Author name</th>
+            <th>Comments</th>
+            <th>Add Comment</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="article: ${allArticles}">
+            <!--            <td style="display: none" th:text="${article.id}" />-->
+            <td th:text="${article.title}"/>
+            <td th:text="${article.content}"/>
+            <td th:text="${article.getAuthor().getName()}"/>
+            <td>
+                <div th:if="${article.getComments().size()!=0}">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>content</th>
+                            <th>author name</th>
+                        </tr>
+                        </thead>
+                        <tr th:each="comment: ${article.getComments()}">
+                            <td th:text="${comment.content}"/>
+                            <td th:text="${comment.getAuthor().getName()}"/>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <div class="add-comment"></div>
+                <p>Add comment:</p>
+                <form th:object="${comment}" method="post" th:action="@{/comment}">
+                    <textarea placeholder="Content" th:field="*{content}"/>
+                    <input type="hidden" th:name="articleId" th:value="${article.id}">
+                    <button>Add comment</button>
                 </form>
             </td>
         </tr>

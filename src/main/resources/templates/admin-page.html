@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User-Page</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Welcome Admin</h2>
+
+<div th:if="${allUser.size()!=0}">
+    <p>all users:</p>
+    <table>
+        <thead>
+        <!--        <tr>-->
+        <th>Username</th>
+        <th>Surname</th>
+        <th>image</th>
+        <th>User article</th>
+        <th>IsActive</th>
+        <!--            <th>Comments</th>-->
+        <!--            <th>Add Comment</th>-->
+        <!--        </tr>-->
+        </thead>
+        <tr th:each="user: ${allUser}">
+            <td th:text="${user.getName()}"/>
+            <td th:text="${user.getSurname()}"/>
+            <td>
+                <img th:src="@{${'/user/image/' + user.image}}" width="200" , height="300">
+            </td>
+            <td>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>author name</th>
+                        <th>content</th>
+                        <th>title</th>
+                        <th>comments</th>
+                    </tr>
+                    </thead>
+                    <tr th:each="article: ${user.getArticles()}">
+                        <td th:text="${article.getAuthor().getName()}"/>
+                        <td th:text="${article.content}"/>
+                        <td th:text="${article.title}"/>
+                        <td>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>content</th>
+                                    <th>author name</th>
+                                </tr>
+                                </thead>
+                                <tr th:each="comment: ${article.getComments()}">
+                                    <td th:text="${comment.content}"/>
+                                    <td th:text="${comment.getAuthor().getName()}"/>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td th:switch="${user.nonLocked}">
+                <form th:action="@{/user/status}" th:case="true" method="post">
+                    <p>Active</p>
+                    <input type="hidden" th:name="status" value="false">
+                    <input type="hidden" th:name="userId" th:value="${user.id}">
+                    <button>InActivate</button>
+                </form>
+
+                <form th:action="@{/user/status}" th:case="false" method="post">
+
+                    <input type="hidden" th:name="userId" th:value="${user.id}">
+                    <input type="hidden" th:name="status" value="true">
+                    <p>Inactive</p>
+                    <button>Activate</button>
+                </form>
+            </td>
+
+        </tr>
+    </table>
+</div>
+<!--<p id="m" class="fa fa-user-circle-o" th:text=" ${c.name}"></p>-->
+<!--<p id="current_user_surname" class="fa fa-user-circle-o" th:text=" ${curr.surname}"></p>-->
+<form th:action="@{/logout}" method="post">
+    <button>Logout</button>
+</form>
+<!--<tr th:each="user: ${allUser}">-->
+<!--    -->
+<!--</tr>-->
+</body>
+</html>

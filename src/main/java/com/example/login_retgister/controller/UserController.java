@@ -17,6 +17,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -62,7 +63,7 @@ public class UserController {
                          @RequestParam("email") String email) {
 
 
-     return userService.verify(modelMap, token, email);
+        return userService.verify(modelMap, token, email);
     }
 
 
@@ -76,10 +77,7 @@ public class UserController {
             modelMap.addAttribute("interests", interestService.allInterests());
             modelMap.addAttribute("myArticles", articleService.articlesByAuthor(currentUser.getUser()));
             modelMap.addAttribute("comment", new Comment());
-            Set<Article> articles = currentUser.getUser().getArticles();
-            for (Article article : articles) {
-                modelMap.addAttribute("articleComment",commentService.commentsByArticle(article));
-            }
+            modelMap.addAttribute("allArticles",articleService.allArticles());
             return "user-page";
         } else {
             return "redirect:/login?errorMsg=Invalid credentials";
@@ -87,9 +85,18 @@ public class UserController {
     }
 
 
-    @PostMapping("/logout")
-    public String logout(){
-        return "index";
+//    @PostMapping("/logout")
+//    public String logout() {
+//        return "index";
+//    }
+
+    @PostMapping("/status")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public String changeUserStatus(@RequestParam(name = "status")boolean status,
+                                   @RequestParam(name = "userId")int useId){
+        userService.changeUserStatus(status, useId);
+        return "redirect:/admin/home";
+
     }
 
 

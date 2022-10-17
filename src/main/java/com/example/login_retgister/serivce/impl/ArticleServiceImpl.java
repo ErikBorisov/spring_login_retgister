@@ -1,18 +1,18 @@
 package com.example.login_retgister.serivce.impl;
 
 import com.example.login_retgister.models.Article;
-import com.example.login_retgister.models.Interest;
 import com.example.login_retgister.models.User;
 import com.example.login_retgister.repositories.ArticleRepository;
-import com.example.login_retgister.repositories.InterestRepository;
 import com.example.login_retgister.serivce.ArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class ArticleServiceImpl implements ArticleService {
 
 
@@ -26,8 +26,24 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
+    public List<Article> allArticles() {
+        return articleRepository.findAllBy();
+    }
+
+
+    @Override
     public List<Article> articlesByAuthor(final User user) {
         return articleRepository.findAllByAuthor(user);
     }
+
+    @Override
+    public void delete(Article article) {
+        articleRepository.deleteArticleById(article.getId());
+    }
+
+//    @Override
+//    public Article delete(int articleId) {
+//        return articleRepository.deleteArticleById(articleId);
+//    }
 
 }

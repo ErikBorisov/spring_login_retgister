@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -18,12 +19,15 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @EnableWebMvc
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+//@Profile("dev")
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Autowired
     @Qualifier("currentUserDetailServiceImpl")
     private UserDetailsService userDetailsService;
+
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -32,9 +36,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
+                .antMatchers("/actuator/**").permitAll()
                 .antMatchers("/user/register").permitAll()
                 .antMatchers("/user/activate").permitAll()
                 .antMatchers("/user/image").permitAll()
+
+                .antMatchers("/images/**").permitAll()
+//                .antMatchers("/admin/**").hasAuthority("ADMIN")
                 .antMatchers("/verifyError").permitAll()
                 .anyRequest().permitAll()
                 .and()
@@ -42,13 +50,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginPage("/login")
                 .usernameParameter("email")
                 .passwordParameter("password")
-                .defaultSuccessUrl("/user/home")
+                .defaultSuccessUrl("/home")
                 .failureUrl("/login?error=Bad credentials")
                 .failureHandler(new CustomAuthenticationFailureHandler())
                 .permitAll()
                 .and()
                 .logout()
-                .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout", "POST"))
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "POST"))
                 .invalidateHttpSession(true)
                 .clearAuthentication(true)
                 .deleteCookies("JSESSIONID")
@@ -58,6 +66,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .tokenValiditySeconds(3000) // 1 week
                 .and();
     }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService)

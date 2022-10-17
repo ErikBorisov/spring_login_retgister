@@ -10,4 +10,8 @@ public interface UserService {
     String activate(String token);
 
     String verify(ModelMap modelMap, String token, String email);
+
+    void changeUserStatus(boolean status, int useId);
+
 }
+

@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserService {
 
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
-//    private final EmailSender emailSender;
 
     @Value("${user.image.path}")
     private String userImagesFolder;
@@ -37,8 +36,8 @@ public class UserServiceImpl implements UserService {
             return "Email already exist!";
         } else {
 
-            String avatarName = System.currentTimeMillis()+"_"+userAvatar.getOriginalFilename();
-            userAvatar.transferTo(new File(userImagesFolder+avatarName));
+            String avatarName = System.currentTimeMillis() + "_" + userAvatar.getOriginalFilename();
+            userAvatar.transferTo(new File(userImagesFolder + avatarName));
 
             user.setPassword(passwordEncoder.encode(user.getPassword()));
             String activationToken = UUID.randomUUID().toString();
@@ -77,7 +76,7 @@ public class UserServiceImpl implements UserService {
                 user.setActivationDate(LocalDateTime.now());
                 userRepository.save(user);
                 modelMap.addAttribute("isfirst", 0);
-            }else {
+            } else {
                 modelMap.addAttribute("isfirst", 2);
             }
         } else {
@@ -85,4 +84,15 @@ public class UserServiceImpl implements UserService {
         }
         return "mail-verification";
     }
+
+    @Override
+    public void changeUserStatus(final boolean status,
+                                 final int useId) {
+        userRepository.findById(useId)
+                .ifPresent(user -> {
+                    user.setNonLocked(status);
+                    userRepository.save(user);
+                });
+    }
 }
+
